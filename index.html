@@ -252,6 +252,8 @@ body{font-family:'Inter',sans-serif;background:#F8F9FA;color:#111827;font-size:1
     <button class="nav-item" data-id="metrics" onclick="show('metrics')"><span class="dot"></span>Metrics & Growth</button>
     <button class="nav-item" data-id="aitrends" onclick="show('aitrends')"><span class="dot"></span>AI Trends</button>
     <button class="nav-item" data-id="staffpm" onclick="show('staffpm')"><span class="dot"></span>Staff PM Strategy</button>
+    <button class="nav-item" data-id="whjudgment" onclick="show('whjudgment')"><span class="dot"></span>Women's Health Judgment</button>
+    <button class="nav-item" data-id="aiskills" onclick="show('aiskills')"><span class="dot"></span>AI & Future of PM</button>
     <button class="nav-item" data-id="casestudies" onclick="show('casestudies')"><span class="dot"></span>Case Studies</button>
     <button class="nav-item" data-id="questions" onclick="show('questions')"><span class="dot"></span>Question Bank</button>
     <button class="nav-item" data-id="positioning" onclick="show('positioning')"><span class="dot"></span>Positioning</button>
@@ -479,6 +481,189 @@ body{font-family:'Inter',sans-serif;background:#F8F9FA;color:#111827;font-size:1
       <div style="font-size:12px;color:#374151">→ Run a mock portfolio-prioritization exercise across 3 hypothetical PM bets</div>
       <div style="font-size:12px;color:#374151">→ Draft 2 coaching questions you'd ask a struggling PM</div>
       <div style="font-size:12px;color:#374151">→ Prep 1 STAR story per Staff-level question</div>
+    </div>
+  </div>
+</section>
+
+<!-- WOMEN'S HEALTH PRODUCT JUDGMENT -->
+<section id="whjudgment" class="section">
+  <div class="ph"><h2>Women's Health Product Judgment</h2><p>Data trust · inclusive design · clinical credibility · monetization ethics — the judgment calls that define this category</p></div>
+
+  <div class="card">
+    <div class="card-t">1 — Health Data Trust & Regulatory Judgment</div>
+    <p style="font-size:12px;color:#6B7280;margin-bottom:12px">The single most-tested topic in women's-health PM interviews. Know the mechanism, not just the headline.</p>
+    <div style="background:#FEF2F2;border-left:3px solid #EF4444;border-radius:0 8px 8px 0;padding:12px 14px;margin-bottom:12px">
+      <div style="font-size:10px;font-weight:700;color:#991B1B;text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px">The case you must know: Flo Health, FTC settlement (2021)</div>
+      <div style="font-size:12px;color:#7F1D1D;line-height:1.6">Flo told users it wouldn't share health data, then shared cycle and pregnancy data with Facebook, Google, and other marketing/analytics SDKs. The FTC settlement required independent privacy audits for 20 years. The root cause was third-party SDKs receiving sensitive signals the product team hadn't fully audited — this is the case every interviewer in this category expects you to reference.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+      <div class="tbox"><h4>Best Practices</h4><ul class="tlist">
+        <li>Audit every analytics/ad SDK for exactly what data it receives — treat this as a recurring review, not a one-time check</li>
+        <li>Purpose-limited consent — don't bundle health-data consent into generic ToS acceptance</li>
+        <li>Avoid diagnostic language ("detects," "diagnoses") that risks crossing into FDA-regulated medical device territory</li>
+        <li>Data minimization — collect only what a feature needs; set deletion schedules</li>
+        <li>Independent privacy review before shipping any new data-sharing integration</li>
+      </ul></div>
+      <div class="tbox"><h4>Vocabulary</h4><ul class="tlist">
+        <li><strong>SaMD</strong> — Software as a Medical Device (FDA classification)</li>
+        <li><strong>FTC Health Breach Notification Rule</strong> — requires notice when health apps expose data</li>
+        <li><strong>Purpose limitation</strong> — data used only for the reason it was collected</li>
+        <li><strong>De-identification</strong> — removing info that could re-identify a user</li>
+        <li><strong>PHI</strong> — Protected Health Information (a HIPAA term; mostly doesn't cover consumer health apps directly, but interviewers expect you to know why it's still relevant context)</li>
+      </ul></div>
+    </div>
+    <div class="alert-amber"><p><strong>Practice question:</strong> "A marketing team wants to add a new attribution SDK. How do you evaluate whether it's safe to ship in a cycle-tracking app?" Answer with a repeatable process — what data it touches, whether it's health-adjacent, what gets disclosed, what the opt-out looks like — not a gut call.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">2 — Inclusive & Diverse User Design</div>
+    <p style="font-size:12px;color:#6B7280;margin-bottom:12px">An ICP defined as "35–50, regular cycle" is a real interview vulnerability if it's the whole story.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+      <div class="tbox"><h4>Segments Often Missed</h4><ul class="tlist">
+        <li>Irregular cycles / PCOS — prediction models break when the input isn't periodic</li>
+        <li>Perimenopause & menopause — the fastest-growing segment in the category (Midi Health, Elektra Health, Stella all built around it)</li>
+        <li>Postpartum — an entirely different hormonal baseline</li>
+        <li>Trans and non-binary users — Clue's 2019 redesign removed gendered defaults from the core experience</li>
+        <li>Teens / first-cycle users — different privacy needs and often a shared device</li>
+      </ul></div>
+      <div class="tbox"><h4>Vocabulary</h4><ul class="tlist">
+        <li><strong>Amenorrhea</strong> — absence of menstruation</li>
+        <li><strong>Perimenopause</strong> — the transition years before menopause, often irregular</li>
+        <li><strong>Health equity</strong> — designing so outcomes don't depend on identity or access</li>
+        <li><strong>Gender-inclusive design</strong> — not assuming one gendered default user</li>
+      </ul></div>
+    </div>
+    <div class="alert-amber"><p><strong>Practice question:</strong> "Is your current ICP excluding a growth segment?" Be ready to say yes — name perimenopause/menopause as the obvious expansion, and explain the product judgment (prediction models need to change, not just the marketing).</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">3 — Clinical Credibility & Trust-Building</div>
+    <p style="font-size:12px;color:#6B7280;margin-bottom:12px">When is AI-generated health guidance safe to fully automate — and when must a human, or a real doctor, be in the loop?</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+      <div class="tbox"><h4>Best Practices</h4><ul class="tlist">
+        <li>Define a harm model — the cost of a false positive vs. a false negative differs by prediction type</li>
+        <li>Involve OB/GYN or clinical advisors to review symptom-related content before shipping</li>
+        <li>Design explicit escalation UX for red-flag symptoms — a designed "see a doctor" moment, not a disclaimer footer</li>
+        <li>Never let the UI's implied confidence exceed the model's actual confidence</li>
+      </ul></div>
+      <div class="tbox"><h4>Vocabulary</h4><ul class="tlist">
+        <li><strong>Clinical validation</strong> — testing claims against real medical evidence, not just user feedback</li>
+        <li><strong>Harm model</strong> — an explicit map of what happens when the system is wrong</li>
+        <li><strong>Escalation path</strong> — the designed route from "AI suggestion" to "see a professional"</li>
+        <li><strong>Explainability</strong> — can the user see why they got a specific recommendation</li>
+      </ul></div>
+    </div>
+    <div class="alert-amber"><p><strong>Practice question:</strong> "At what point should the product tell a user to see a doctor instead of showing a prediction?" Answer with a confidence-threshold + symptom-severity framework — not "we'd add a disclaimer."</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">4 — Monetization Ethics in Health</div>
+    <p style="font-size:12px;color:#6B7280;margin-bottom:12px">Paywalls that gate health guidance draw far more regulatory and press scrutiny than a paywall on a game level.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+      <div class="tbox"><h4>Best Practices</h4><ul class="tlist">
+        <li>Never gate safety-relevant information behind a paywall</li>
+        <li>Cancellation should be as easy as sign-up — regulators are actively scrutinizing subscription cancellation flows</li>
+        <li>Transparent trial terms — no auto-renew surprises</li>
+        <li>Don't design monetization around health anxiety as the primary conversion lever</li>
+      </ul></div>
+      <div class="tbox"><h4>Vocabulary</h4><ul class="tlist">
+        <li><strong>Dark pattern</strong> — UI designed to manipulate rather than inform</li>
+        <li><strong>ROSCA</strong> — Restore Online Shoppers' Confidence Act, governs negative-option billing in the US</li>
+        <li><strong>Negative option billing</strong> — auto-renewing charges unless the user actively cancels</li>
+        <li><strong>Price anchoring</strong> — showing a higher reference price to make the actual price feel smaller</li>
+      </ul></div>
+    </div>
+    <div class="alert-amber"><p><strong>Practice question:</strong> "How would you design a paywall that converts well without feeling exploitative?" Reference the anxiety-vs-value line explicitly.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">Resources to Go Deeper</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="font-size:12px;color:#374151">→ Search "FTC Flo Health settlement 2021" — the case every women's-health PM interview references. Know the mechanism: third-party SDK data sharing.</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd" target="_blank" style="color:#4F46E5">FDA — Software as a Medical Device (SaMD)</a> — where wellness ends and regulated medical device begins</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://www.nngroup.com" target="_blank" style="color:#4F46E5">NN Group</a> — search their site for inclusive design and health UX research</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://rockhealth.com/insights/" target="_blank" style="color:#4F46E5">Rock Health Insights</a> — digital health funding, regulation, and market trend reports</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://www.ftc.gov" target="_blank" style="color:#4F46E5">FTC.gov</a> — search "health apps" or "negative option rule" for current enforcement actions on subscription cancellation</div>
+      <div style="font-size:12px;color:#374151">→ Search "Clue inclusive redesign" and "Midi Health / Elektra Health menopause" for concrete competitor cases on inclusivity and segment expansion</div>
+    </div>
+  </div>
+</section>
+
+<!-- AI & FUTURE OF PM -->
+<section id="aiskills" class="section">
+  <div class="ph"><h2>AI & The Future of Product Management</h2><p>Core literacy, new skills the AI era demands, vocabulary, and where to stay current</p></div>
+
+  <div class="card">
+    <div class="card-t">1 — Core AI Literacy Every PM Needs</div>
+    <div class="tbox" style="width:100%"><ul class="tlist">
+      <li>How LLMs actually work, conceptually — next-token prediction, not a lookup or a database</li>
+      <li>Context window — what fits, what gets truncated, and what "context rot" means as a conversation grows long</li>
+      <li>Prompting vs. fine-tuning vs. RAG — three different ways to make a model "know" something, each with very different cost/speed/control tradeoffs</li>
+      <li>Evals — how teams measure whether an AI feature is actually good, before and after shipping</li>
+      <li>Latency and cost are product decisions, not just engineering constraints</li>
+      <li>Hallucination — probabilistic outputs will sometimes be confidently wrong; design for it, don't hope it away</li>
+    </ul></div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">2 — New Skills the AI Era Demands</div>
+    <div class="tbox" style="width:100%"><ul class="tlist">
+      <li>Writing evals, not just specs — defining "good enough" for a system that's right most of the time, never all of the time</li>
+      <li>Running prompt/model experiments like growth experiments — hypothesis, metric, guardrail</li>
+      <li>Partnering with ML/applied-AI teams, not just engineering — different vocabulary, different iteration loop</li>
+      <li>Treating cost-per-query or cost-per-token as a live product metric, same as CAC</li>
+      <li>Judging build vs. buy vs. wrap — foundation model API vs. fine-tune vs. in-house model</li>
+      <li>Designing trust progressively — agentic features earn autonomy over time, not on day one</li>
+    </ul></div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">3 — Vocabulary / Terminology Cheat Sheet</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;font-size:12px;color:#374151;line-height:1.8">
+      <div><strong>LLM</strong> — Large Language Model</div>
+      <div><strong>Token / Context window</strong> — units of text a model reads; the max it can hold at once</div>
+      <div><strong>Temperature / Top-p</strong> — controls for output randomness</div>
+      <div><strong>Prompt engineering</strong> — designing inputs to reliably steer model outputs</div>
+      <div><strong>Fine-tuning vs. RLHF</strong> — adapting a model's weights vs. training it on human preference feedback</div>
+      <div><strong>RAG</strong> — Retrieval-Augmented Generation; grounding answers in retrieved documents</div>
+      <div><strong>Embeddings / Vector database</strong> — numeric representations of meaning; where they're stored for retrieval</div>
+      <div><strong>Hallucination</strong> — a confident, fluent, but false output</div>
+      <div><strong>Grounding</strong> — anchoring outputs to a verified source of truth</div>
+      <div><strong>Eval / Evals</strong> — a structured test suite for AI feature quality</div>
+      <div><strong>Agent / Agentic workflow</strong> — a system that plans and takes multi-step actions, not just replies</div>
+      <div><strong>Multimodal</strong> — models that handle text, image, audio, etc. together</div>
+      <div><strong>Inference</strong> — running a trained model to produce an output</div>
+      <div><strong>Guardrails</strong> — rules/filters constraining what a model can output or do</div>
+      <div><strong>System prompt</strong> — the hidden instruction set shaping a model's behavior</div>
+      <div><strong>Few-shot / Zero-shot</strong> — giving examples in the prompt vs. none</div>
+      <div><strong>Chain-of-thought</strong> — a model reasoning step by step before answering</div>
+      <div><strong>Human-in-the-loop</strong> — a person reviews or approves before high-stakes actions</div>
+      <div><strong>MCP</strong> — Model Context Protocol; a standard for connecting agents to tools and data</div>
+      <div><strong>Context rot</strong> — quality degrading as context grows long, distinct from hitting the window limit</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">4 — Skills to Train This Month</div>
+    <div class="tbox" style="width:100%"><ul class="tlist">
+      <li>Use an LLM API directly, not just a chat UI, for one small project — feel the real latency/cost tradeoffs</li>
+      <li>Write 3 eval criteria for an existing AI feature (accuracy, safety, tone)</li>
+      <li>Do a cold teardown of one agentic product (Claude, ChatGPT tasks, Perplexity, Cursor)</li>
+      <li>Read one technical primer on RAG or on how context windows work</li>
+      <li>Follow one AI researcher or practitioner outside the product world for a different lens</li>
+    </ul></div>
+  </div>
+
+  <div class="card">
+    <div class="card-t">Where to Stay on the Edge</div>
+    <p style="font-size:12px;color:#6B7280;margin-bottom:10px">AI moves fast — these sources are more durable than any fixed "latest news" list. Check them weekly.</p>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="font-size:12px;color:#374151">→ <a href="https://www.oneusefulthing.org" target="_blank" style="color:#4F46E5">One Useful Thing</a> — Ethan Mollick. The best practical AI thinking for product people.</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://a16z.com/ai/" target="_blank" style="color:#4F46E5">a16z AI</a> — deep dives on agentic UX, copilots, trust and safety.</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://www.anthropic.com/news" target="_blank" style="color:#4F46E5">Anthropic News</a> — model releases, safety research, product announcements.</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://simonwillison.net" target="_blank" style="color:#4F46E5">Simon Willison's blog</a> — hands-on, practitioner-level LLM experimentation.</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://www.latent.space" target="_blank" style="color:#4F46E5">Latent Space</a> — podcast and newsletter for applied AI engineering.</div>
+      <div style="font-size:12px;color:#374151">→ <a href="https://www.lennysnewsletter.com" target="_blank" style="color:#4F46E5">Lenny's Newsletter</a> — regular AI-for-PMs coverage from working practitioners.</div>
     </div>
   </div>
 </section>
